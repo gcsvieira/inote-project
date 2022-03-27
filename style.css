@@ -1,0 +1,84 @@
+/* properties */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+body {
+    padding-top: 5rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.headerBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nameApp {
+    height: 8rem;
+    margin-left: 0rem;
+}
+
+
+/* espaçamentos */
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem;
+}
+
+.mt3 {
+    margin-top: 3rem;
+}
+
+.matIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding-left: 1.2rem;
+}
+
+.matIcon .size {
+    fill: #787878;
+}
+
+.padLeft {
+    padding-left: 1rem;
+}
+
+.padRight {
+    padding-right: 1rem;
+}
+
+
+/* cores */
