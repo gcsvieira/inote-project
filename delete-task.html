@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>iNote</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="headerBar " class="headerBar task-screen marRight">
+        <a href="index.html">
+            <div id="back" class="matIcon filter-gray">
+                <svg viewBox="0 0 24 24">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+            </svg>
+            </div>
+        </a>
+        <h1 class="nameApp task-title">Deletar tarefa</h1>
+    </header>
+
+    <div class="warning-box">
+        <p class="delete-p">Deseja realmente deletar esta tarefa?</p>
+        <div class="buttonWarning">
+            <div class="buttonGroup delete-task mt2">
+                <button type="submit" id="delete-task" class="button mt1" onclick="window.location.href='./index.html'">Não</button>
+                <button type="submit" id="add-task" class="secondary button mt1" onclick="window.location.href='./index.html'">Sim</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

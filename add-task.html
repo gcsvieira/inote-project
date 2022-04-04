@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>iNote</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="headerBar" class="headerBar task-screen marRight">
+        <a href="index.html">
+            <div id="back" class="matIcon filter-gray">
+                <svg viewBox="0 0 24 24">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+            </svg>
+            </div>
+        </a>
+        <h1 class="nameApp task-title">Adicionar tarefa</h1>
+    </header>
+
+
+    <div class="addTask component">
+        <label><h1 class="fieldTitle">Título</h1></label>
+        <input class="field mt1" type="text" autocomplete="off" />
+    </div>
+
+    <div class="addTask component">
+        <label><h1 class="fieldTitle">Horário</h1></label>
+        <input class="field time mt1" type="time" />
+    </div>
+
+    <div class="buttonGroup mt2">
+        <button type="submit" class="button mt2" onclick="window.location.href='./index.html'">Cancelar</button>
+        <button type="submit" class="button mt2 secondary" onclick="window.location.href='./index.html'">Adicionar</button>
+    </div>
+</body>
+
+</html>
