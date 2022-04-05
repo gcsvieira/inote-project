@@ -8,15 +8,15 @@
     <script src="script.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="./manifest.json">
-    <link rel="icon" type="image/png" href="./imagem/pr.png" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/icon-192x192.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="inote" />
-    <link rel="apple-touch-icon" sizes="192x192" href="./icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" sizes="128x128" href="./icons/icon-256x256.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="./icons/icon-384x384.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="./icons/icon-512x512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-256x256.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-512x512.png" />
 </head>
 
 <body>
@@ -38,7 +38,7 @@
     <!-- Botões inferiores -->
     <div class="bottomButtons">
         <div class="buttonGroup mt2">
-            <button type="submit" id="delete-task" class="button mt1" onclick="window.location.href='./delete-task.html'">Deletar Tarefa</button>
+            <button type="submit" id="delete-task" class="button mt1" onclick="window.location.href='./view-task.html'">Deletar Tarefa</button>
             <button type="submit" id="add-task " class="secondary button mt1" onclick="window.location.href='./add-task.html'">Adicionar Tarefa</button>
         </div>
     </div>
@@ -137,16 +137,16 @@
         <!-- Espaçamento na parte inferior -->
         <div class="bottom-screen">
         </div>
-
-        <script>
-            // ServiceWorker
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('./serviceWorker.js')
-                    .then(reg => console.info('registered sw', reg))
-                    .catch(err => console.error('error registering sw', err));
-            }
-        </script>
     </div>
+
+    <script>
+        // ServiceWorker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./serviceWorker.js')
+                .then(reg => console.info('registered sw', reg))
+                .catch(err => console.error('error registering sw', err));
+        }
+    </script>
 </body>
 
 </html>
